@@ -1,0 +1,395 @@
+/* =========================================================
+   HABITAT FOR HUMANITY SOUTH AFRICA
+   Part 2 - Website Styling
+   ========================================================= */
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling for the whole website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #333333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Header section */
+header {
+    background-color: #2f5d50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Website title */
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Website navigation */
+nav {
+    margin-top: 1rem;
+}
+
+/* Navigation links */
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0.3rem 0.6rem;
+    padding: 0.4rem 0.6rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    text-decoration: underline;
+    background-color: #23473d;
+}
+
+/* Navigation focus effect */
+nav a:focus {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* Navigation active effect */
+nav a:active {
+    color: #d9e8df;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+/* Page sections */
+section {
+    background-color: white;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0ddd5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h2 {
+    color: #2f5d50;
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    color: #2f5d50;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links used as buttons */
+section a {
+    display: inline-block;
+    background-color: #2f5d50;
+    color: white;
+    padding: 0.65rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Button link hover */
+section a:hover {
+    background-color: #23473d;
+}
+
+/* Button link focus */
+section a:focus {
+    outline: 2px solid #2f5d50;
+    outline-offset: 3px;
+}
+
+/* Button link active */
+section a:active {
+    background-color: #1c392f;
+}
+
+/* Form layout using Flexbox */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Form labels */
+label {
+    font-weight: bold;
+    color: #2f5d50;
+}
+
+/* Form fields */
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.7rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/* Form field focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2f5d50;
+    border-color: #2f5d50;
+}
+
+/* Textarea */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit buttons */
+button {
+    background-color: #2f5d50;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #23473d;
+}
+
+/* Button focus */
+button:focus {
+    outline: 2px solid #2f5d50;
+    outline-offset: 3px;
+}
+
+/* Button active */
+button:active {
+    background-color: #1c392f;
+}
+
+/* Map area */
+section div {
+    background-color: #eeeeee;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Hero image */
+.hero img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+/* Responsive image container */
+.hero picture {
+    display: block;
+    width: 100%;
+}
+
+/* Hero text */
+.hero-text {
+    padding: 0.5rem;
+}
+
+/* Programmes layout using CSS Grid */
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Programme content boxes */
+.content-box {
+    min-width: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Footer paragraph */
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE DESIGN
+   Applies to screens between 601px and 900px
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        padding: 1.3rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin: 0.2rem;
+    }
+
+    main {
+        width: 92%;
+        margin: 1.5rem auto;
+    }
+
+    section {
+        padding: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .content-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .hero img {
+        max-height: 350px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+   Applies to screens 600px and below
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Mobile navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    /* Mobile main content */
+    main {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
+    /* Mobile sections */
+    section {
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 6px;
+    }
+
+    /* Mobile headings */
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Mobile hero image */
+    .hero img {
+        max-height: 250px;
+    }
+
+    /* Mobile programme layout */
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mobile form fields */
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    /* Mobile button */
+    button {
+        width: 100%;
+    }
+
+    /* Mobile footer */
+    footer {
+        padding: 1rem 0.5rem;
+    }
+}
